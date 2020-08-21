@@ -1,13 +1,21 @@
-import { Container } from '@material-ui/core'
+import { Container, Grid } from '@material-ui/core'
 import React from 'react'
-import style from '../auth/style'
+import style from './styles'
+import {CardGrid} from './CardGrid';
 export const ParkingScreen = () => {
 
     const classes = style();
 
     return (
-        <Container className={classes.root}>
-                <h1>Hola como estamos</h1>
+        <Container maxWidth="xl" className={classes.root}>
+                <Grid container spacing={1}>
+                    <Grid item xs={12}>
+                        <CardGrid />
+                    </Grid>
+                    <Grid item xs={12}>
+                      
+                      </Grid>
+                </Grid>
         </Container>
     )
 }

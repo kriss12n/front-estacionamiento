@@ -20,6 +20,7 @@ import Style from "./styles";
 import {routes} from "../../routes";
 import { useDispatch, useSelector } from "react-redux";
 import {selectedNav} from '../../actions/ui';
+import {Collapse} from '@material-ui/core'
 
 
 console.log(routes);
@@ -57,7 +58,7 @@ export default function Sidebar(props) {
             <div className={classes.toolbar} >
                 <Typography variant="h5"align="center" style={{marginTop:'15px',color:'white'}}> <DriveEta style={{ fontSize: 20 }}/>Parking App</Typography>
             </div>
-            <Divider />
+
             <div className={classes.toolbarItems}>
                 <List>
                     {routes.map(ruta => (
@@ -75,6 +76,10 @@ export default function Sidebar(props) {
                             <ListItemText primary={ruta.nav} />
                         </ListItem>
                     ))}
+
+                    <Collapse>
+                        hola hola
+                    </Collapse>
                 </List>   
                 <Button variant="contained" color="secondary" onClick={handleLogout} className={classes.buttonLogout}>
                           <PowerSettingsNew style={{ marginRight:'8px' }} />   Cerrar sesion
@@ -87,8 +92,7 @@ export default function Sidebar(props) {
     return (
         <div className={`${classes.root} animate__animated animate__fadeIn`}>
             <CssBaseline />
-           <Hidden smUp implementation="css">
-            <AppBar position="fixed" className={classes.appBar}>
+            <AppBar position="fixed" elevation={0} className={classes.appBar}>
                     <Toolbar>
                         <IconButton
                             color="inherit"
@@ -99,10 +103,9 @@ export default function Sidebar(props) {
                         >
                             <Icon>reorder</Icon>
                         </IconButton>
-
                     </Toolbar>
                 </AppBar>
-           </Hidden>
+          
             <nav className={classes.drawer} aria-label="mailbox folders">
                 <Hidden smUp implementation="css">
                     <Drawer

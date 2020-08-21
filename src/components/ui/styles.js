@@ -4,7 +4,6 @@ const drawerWidth = 240;
 
 export default makeStyles(theme => ({
     root: {
-
         display: "flex"
     },
     drawer: {
@@ -18,6 +17,7 @@ export default makeStyles(theme => ({
         [theme.breakpoints.up("sm")]: {
             width: `calc(100% - ${drawerWidth}px)`,
             marginLeft: drawerWidth,
+            backgroundColor: '#131458'
         }
     },
     menuButton: {
@@ -30,13 +30,15 @@ export default makeStyles(theme => ({
     toolbar: theme.mixins.toolbar,
 
     drawerPaper: {
-        width: drawerWidth
+        width: drawerWidth,
+        backgroundColor: '#131458'
     },
     content: {
-        marginTop: 20,
+
         flexGrow: 1,
-        padding: theme.spacing(4),
-        height: "100vh",
+        paddingTop: 80,
+        padding: '20px',
+        backgroundColor: "#131458"
     },
     toolbarItems: {
         height: '90vh',
@@ -76,7 +78,7 @@ export default makeStyles(theme => ({
 
     sidebar: {
         height: '100vh',
-        backgroundColor: '#040930',
+        backgroundColor: '#292B67',
     },
     icon: {
         color: 'white'
