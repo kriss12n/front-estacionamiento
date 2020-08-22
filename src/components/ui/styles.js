@@ -41,7 +41,7 @@ export default makeStyles(theme => ({
         backgroundColor: "#131458"
     },
     toolbarItems: {
-        height: '90vh',
+        height: '87vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between'

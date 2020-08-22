@@ -9,25 +9,25 @@ export const CardGrid = () => {
             id:1,
             nombre:'Estacionamientos ocupados',
             cantidad:'10',
-            icono:''
+            icono:'star'
         },
         {
             id:2,
             nombre:'Estacionamientos disponibles',
             cantidad:'30',
-            icono:''
+            icono:'accessibility'
         },
         {
             id:3,
             nombre:'Total de estacionamientos',
             cantidad:'40',
-            icono:''
+            icono:'airplay'
         },
         {
             id:4,
             nombre:'Recaudado hoy',
             cantidad:'5000',
-            icono:''
+            icono:'album'
         }
 
     ];

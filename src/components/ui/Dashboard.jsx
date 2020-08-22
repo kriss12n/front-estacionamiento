@@ -15,7 +15,7 @@ import Typography from "@material-ui/core/Typography";
 import { useTheme } from "@material-ui/core/styles";
 import { Link, useHistory } from "react-router-dom";
 import { DriveEta, PowerSettingsNew } from "@material-ui/icons";
-import { Button } from "@material-ui/core";
+import { Avatar, Button, InputLabel, MenuItem, Select } from "@material-ui/core";
 import Style from "./styles";
 import {routes} from "../../routes";
 import { useDispatch, useSelector } from "react-redux";
@@ -76,14 +76,11 @@ export default function Sidebar(props) {
                             <ListItemText primary={ruta.nav} />
                         </ListItem>
                     ))}
-
-                    <Collapse>
-                        hola hola
-                    </Collapse>
-                </List>   
+                </List>
                 <Button variant="contained" color="secondary" onClick={handleLogout} className={classes.buttonLogout}>
                           <PowerSettingsNew style={{ marginRight:'8px' }} />   Cerrar sesion
                 </Button>
+               
             </div>
             
         </div>
@@ -103,6 +100,12 @@ export default function Sidebar(props) {
                         >
                             <Icon>reorder</Icon>
                         </IconButton>
+                       <IconButton aria-label="notificaciones" >
+                         <Icon style={{color:'white'}} >notifications</Icon>
+                       </IconButton>
+                      <Avatar>C</Avatar>
+                      
+                       
                     </Toolbar>
                 </AppBar>
           
@@ -121,6 +124,7 @@ export default function Sidebar(props) {
                             keepMounted: true // Better open performance on mobile.
                         }}
                     >
+                        
                         {drawer}
                     </Drawer>
                 </Hidden>

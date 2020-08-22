@@ -9,6 +9,25 @@ export default makeStyles({
         height: '99vh',
     },
 
+    cardLayout: {
+        display: 'flex',
+        padding: '10px'
+    },
+    cardText: {
+        width: '85%'
+
+    },
+
+    cardIcon: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'flex-end',
+        width: '15%'
+    },
+    icon: {
+        fontSize: 40
+    }
+
 
 
 
