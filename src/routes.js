@@ -8,9 +8,28 @@ export const routes = [
     },
     {
         id: "2",
-        link: "/drag&drop",
-        icon: "pan_tool",
-        nav: "Drag & Drop"
+        link: "/parking",
+        icon: "directions_car",
+        nav: "Estacionamientos"
+    },
+    {
+        id: "3",
+        link: "/workers",
+        icon: "group",
+        nav: "Trabajadores"
+    },
+
+    {
+        id: "4",
+        link: "/reports",
+        icon: "description",
+        nav: "Reportes"
+    },
+    {
+        id: "5",
+        link: "/settings",
+        icon: "build",
+        nav: "Configuraciones"
     }
 
 ];

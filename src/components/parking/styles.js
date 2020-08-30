@@ -15,7 +15,6 @@ export default makeStyles({
     },
     cardText: {
         width: '85%'
-
     },
 
     cardIcon: {
@@ -26,9 +25,5 @@ export default makeStyles({
     },
     icon: {
         fontSize: 40
-    }
-
-
-
-
+    },
 });

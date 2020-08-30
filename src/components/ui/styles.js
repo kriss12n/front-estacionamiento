@@ -82,6 +82,22 @@ export default makeStyles(theme => ({
     },
     icon: {
         color: 'white'
+    },
+    avatar: {
+
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'flex-end'
+
+    },
+    navbarItems: {
+        display: 'flex',
+        flexDirection: 'row',
+        [theme.breakpoints.up("sm")]: {
+            justifyContent: 'flex-end'
+        },
+        justifyContent: 'space-between'
+
     }
 
 }));

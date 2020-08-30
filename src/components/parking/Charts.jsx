@@ -1,0 +1,40 @@
+import { Card, Grid } from "@material-ui/core";
+import React, { useState } from "react";
+import { Line, } from "react-chartjs-2";
+import styles from "./styles";
+export const Charts = () => {
+    const classes = styles(); 
+    const [data, setData] = useState({
+        labels: [
+            "01:00",
+            "07:00",
+            "13:00",
+            "16:00",
+            "19:00",
+            "23:00",
+
+        ],
+        datasets: [
+            {
+                label: "Porcentaje de ocupado",
+                data: [10, 60, 90,23, 56, 12,],
+                backgroundColor: [
+                    "rgba(11, 87, 211, 0.2)",
+                ]
+            }
+        ]
+    });
+
+    return (
+        <Grid item xs={12} style={{height:'45vh'}} >  
+           <Card className={classes.cardLayout}  style={{height:'100%'}} >
+              <Grid container spacing={2}>
+                  <Grid item xs={12}  >
+                     <Line data={data} options={{ maintainAspectRatio: false }} />
+                  </Grid>
+              </Grid>
+           </Card>
+        </Grid>   
+    );
+};
+

@@ -90,7 +90,7 @@ export default function Sidebar(props) {
         <div className={`${classes.root} animate__animated animate__fadeIn`}>
             <CssBaseline />
             <AppBar position="fixed" elevation={0} className={classes.appBar}>
-                    <Toolbar>
+                    <Toolbar className={classes.navbarItems}>
                         <IconButton
                             color="inherit"
                             aria-label="open drawer"
@@ -100,12 +100,13 @@ export default function Sidebar(props) {
                         >
                             <Icon>reorder</Icon>
                         </IconButton>
-                       <IconButton aria-label="notificaciones" >
+                    
+                    <div className={classes.avatar} >
+                    <IconButton aria-label="notificaciones"  >
                          <Icon style={{color:'white'}} >notifications</Icon>
-                       </IconButton>
+                    </IconButton>
                       <Avatar>C</Avatar>
-                      
-                       
+                    </div>
                     </Toolbar>
                 </AppBar>
           
