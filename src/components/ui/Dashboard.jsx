@@ -20,7 +20,6 @@ import Style from "./styles";
 import {routes} from "../../routes";
 import { useDispatch, useSelector } from "react-redux";
 import {selectedNav} from '../../actions/ui';
-import {Collapse} from '@material-ui/core'
 
 
 console.log(routes);
@@ -80,9 +79,7 @@ export default function Sidebar(props) {
                 <Button variant="contained" color="secondary" onClick={handleLogout} className={classes.buttonLogout}>
                           <PowerSettingsNew style={{ marginRight:'8px' }} />   Cerrar sesion
                 </Button>
-               
             </div>
-            
         </div>
     );
 

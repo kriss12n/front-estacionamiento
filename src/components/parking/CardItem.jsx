@@ -7,7 +7,7 @@ export const CardItem = ({cantidad,icono,nombre}) => {
   const classes = style();
 
     return (
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} >
            <Card className={classes.cardLayout} >
               <Grid container spacing={1}>
                   <Grid item className={classes.cardText} >

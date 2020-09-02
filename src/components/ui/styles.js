@@ -34,7 +34,7 @@ export default makeStyles(theme => ({
         backgroundColor: '#131458'
     },
     content: {
-
+        height: '100%',
         flexGrow: 1,
         paddingTop: 80,
         padding: '20px',

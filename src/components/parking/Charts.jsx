@@ -26,11 +26,11 @@ export const Charts = () => {
     });
 
     return (
-        <Grid item xs={12} style={{height:'45vh'}} >  
-           <Card className={classes.cardLayout}  style={{height:'100%'}} >
+        <Grid item xs={12}>  
+           <Card className={classes.cardLayout} >
               <Grid container spacing={2}>
-                  <Grid item xs={12}  >
-                     <Line data={data} options={{ maintainAspectRatio: false }} />
+                  <Grid item xs={12} style={{height:'50vh', width:'40vw'}}  >
+                     <Line data={data}  options={{maintainAspectRatio: false,responsive:true }} />
                   </Grid>
               </Grid>
            </Card>

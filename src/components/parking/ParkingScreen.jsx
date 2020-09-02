@@ -15,7 +15,7 @@ export const ParkingScreen = () => {
                     </Grid>
                     <Grid item xs={12}>
                         <ChartGrid />
-                      </Grid>
+                    </Grid>
                 </Grid>
         </Container>
     )
